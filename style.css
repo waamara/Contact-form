@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    min-height: auto;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 90vh;
+    border-radius: 1vw;
+    padding: 1vw; 
+}
+
+#successMessage{
+    background-color: hsl(187, 24%, 22%); 
+    width: 35vw;
+    height:7vw ;  
+    border-radius: 0.8vw;  
+    display: none;
+} 
+
+.fer{
+    display: flex;  
+    color: hsl(0, 0%, 100%); 
+    margin-top: 2vw; 
+    margin-left: 2vw;  
+    margin-bottom: 0.7vw; 
+}
+
+.RETY{
+    margin-left: 2vw; 
+    color: hsl(186, 15%, 59%);
+}
+
+.First,
+.how {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+
+
+.input-container input[type="checkbox"] {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.input-container input[type="text"] {
+    padding-left: 25px;
+    height: 3vw;
+    width: 20vw;
+}
+
+span {
+    color: hsl(169, 82%, 27%);
+}
+
+.s {
+    color: hsl(186, 15%, 59%);
+}
+
+h2 {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    color: hsl(187, 24%, 22%);
+}
+
+form {
+    margin-left: 2vw;
+}
+
+.fu {
+    height: 3vw;
+    width: 20vw;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+    color: hsl(187, 24%, 22%);
+}
+
+#o {
+    margin-right: 2vw;
+}
+
+.k {
+    height: 3vw;
+    width: 42vw;
+    margin-top: 0.5vw;
+    padding-left: 2vw;
+    margin-bottom: 1vw;
+    color: hsl(187, 24%, 22%);
+}
+
+.how {
+    margin-top: 1vw;
+}
+
+.gg {
+    margin-right: 2vw;
+}
+
+.sms {
+    margin-top: 0.5vw;
+    max-width: 42.3vw;
+    min-width: 42.3vw;
+    width: 42.3vw;
+    height: 6vw;
+    min-height: 6vw;
+    max-height: 6vw;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    color: hsl(187, 24%, 22%);
+    font-family: "Karla", sans-serif;
+}
+
+.lastbtn {
+    width: 42.3vw;
+    height: 3vw;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: medium;
+    border-style: none;
+}
+
+.fu,
+.k,
+.sms,
+.lastbtn,
+.input-container input[type="text"] {
+    border-radius: 0.5vw;
+    border: 1px solid hsl(186, 15%, 59%);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: -0.5vw;
+    margin-bottom: 1vw;
+}
+
+.error-input {
+    border-color: red;
+}
+
+.fu:hover,
+.k:hover,
+.sms:hover,
+.input-container input[type="text"]:hover {
+    border-color: hsl(169, 82%, 27%);
+    border-width: 1.5px;
+}
+
+.lastbtn:hover {
+    background-color: hsl(187, 24%, 22%);
+}
+
+.fu:focus,
+.k:hover,
+.sms:hover,
+.input-container input[type="text"]:focus {
+    border-color: hsl(169, 82%, 27%);
+    outline: none;
+}
+
+/* Custom Checkbox Styling for checkInput1 and checkInput2 */
+#checkInput1,
+#checkInput2 {
+    appearance: none;
+    /* Hide default appearance */
+    -webkit-appearance: none;
+    /* For older versions of Safari */
+    -moz-appearance: none;
+    /* For older versions of Firefox */
+    width: 1vw;
+    /* Size of the circle */
+    height: 1vw;
+    /* Size of the circle */
+    border-radius: 50%;
+    /* Make it circular */
+    border: 1px solid hsl(186, 15%, 59%);
+    /* Border color */
+    outline: none;
+    /* Remove focus outline */
+    cursor: pointer;
+}
+
+/* Custom Checkbox Checked Styling */
+#checkInput1:checked,
+#checkInput2:checked {
+    background-color: hsl(169, 82%, 27%);
+    /* Color when checked */
+}
+
+#jkhaha {
+    appearance: none;
+    /* Hide default appearance */
+    -webkit-appearance: none;
+    /* For older versions of Safari */
+    -moz-appearance: none;
+    /* For older versions of Firefox */
+    width: 1vw;
+    /* Size of the circle */
+    height: 1vw;
+    /* Size of the circle */
+    border: 1px solid hsl(186, 15%, 59%);
+    /* Border color */
+    outline: none;
+    /* Remove focus outline */
+    cursor: pointer;
+}
+
+/* Custom Checkbox Styling */
+.las { 
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    padding-top: -3vw;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1vw;
+    /* Size of the checkbox */
+    height: 1vw;
+    /* Size of the checkbox */
+    border: 1px solid hsl(186, 15%, 59%);
+    /* Border color */
+    border-radius: 1px;
+    /* Rounded corners for the checkbox */
+    outline: none;
+    /* Remove focus outline */
+    cursor: pointer;
+    position: relative;
+}
+
+/* Checkbox Checked Styling */
+.las:checked {
+    background-color: hsl(169, 82%, 27%);
+}
+
+/* Checkmark Inside Checkbox */
+.las:checked::before {
+    content: '\2714';
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

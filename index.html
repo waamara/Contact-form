@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="successMessage" > 
+    <div class="fer">
+      <img src="C:\Users\ideaPad\OneDrive\Bureau\HTML CSS\HTML CSS JS 1\assets\images\icon-success-check.svg" alt=""> 
+      <p>Message Sent!</p>
+    </div>
+    <p class="RETY">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="" id="">
+      <div>
+        <div class="First">
+          <div>
+            <label for="form" class="s">First Name <span>*</span></label><br />
+            <input class="fu" id="o" type="text" />
+            <p class="error-message"></p>
+          </div>
+          <div>
+            <label for="" class="s">Last Name <span>*</span></label><br />
+            <input class="fu" id="kd" type="text" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <label for="" class="s">Email Address <span>*</span></label><br />
+        <input class="k" id="tez" type="email" />
+        <p class="error-message"></p>
+      </div>
+      <div id="id">
+        <label for="" class="s">Query Type <span>*</span></label><br />
+        <div class="input-container">
+          <input type="checkbox" id="checkInput1" />
+          <input type="text" id="textInput" class="gg" placeholder="General Enquiry" />
+        </div>
+        <div class="input-container">
+          <input type="checkbox" id="checkInput2" />
+          <input type="text" id="textInput" placeholder="Support Request" />
+        </div>
+      </div>
+      <div>
+        <label for="" class="s"> Message <span>*</span></label><br />
+        <textarea id="smsss" class="sms"></textarea>
+
+        <p class="error-message"></p>
+      </div>
+      <div class="how">
+        <input type="checkbox" class="las" id="jkhaha" />
+        <p class="s">
+          I consent to being contacted by the team
+          <span>*</span>
+        </p>
+      </div>
+      <button class="lastbtn" onclick="valid()" type="button">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
